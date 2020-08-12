@@ -1,16 +1,13 @@
-# tlk_wiki
+# TLKWIKI
+Ini adalah kloning aplikasi yang saya masukkan untuk memenuhi Submission pada kelas Belajar Membuat Aplikasi Android untuk Pemula dari Dicoding.
 
-A new Flutter project.
+Aplikasi asli dibuat menggunakan Android Studio dan bahasa Kotlin. Kemudian saya buat kembali menggunakan framework Flutter.
 
-## Getting Started
+![Screenshot](https://github.com/amalyulianto/TLKWiki/blob/master/screenshots/TLKWiki_home.PNG?raw=true)
+![Screenshot](https://github.com/amalyulianto/TLKWiki/blob/master/screenshots/TLKWiki_overview.PNG?raw=true)
+![Screenshot](https://github.com/amalyulianto/TLKWiki/blob/master/screenshots/TLKWiki_list.PNG?raw=true)
+![Screenshot](https://github.com/amalyulianto/TLKWiki/blob/master/screenshots/TLKWiki_detail1.PNG?raw=true)
+![Screenshot](https://github.com/amalyulianto/TLKWiki/blob/master/screenshots/TLKWiki_detail2.PNG?raw=true)
+![Screenshot](https://github.com/amalyulianto/TLKWiki/blob/master/screenshots/TLKWiki_about.PNG?raw=true)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
