@@ -25,21 +25,24 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Container(
         decoration: BoxDecoration(
-          // color: new Color.fromRGBO(255, 0, 0, 0.5),
           image: DecorationImage(
             colorFilter: ColorFilter.mode(
               Colors.white.withOpacity(0.85),
-              BlendMode.dstATop,
+              BlendMode
+                  .dstATop, // Apply opaque color with opacity on the background
             ),
-            image: AssetImage('assets/images/the_last_kingdom.jpg'),
+            image: AssetImage(
+              'assets/images/the_last_kingdom.jpg',
+            ),
             fit: BoxFit.fill,
           ),
         ),
         constraints: BoxConstraints.expand(),
         child: Padding(
-          padding: EdgeInsets.only(top: 400),
+          padding: EdgeInsets.only(
+              top: MediaQuery.of(context).size.height * 0.6,
+              bottom: MediaQuery.of(context).size.height * 0.001),
           child: Column(
-            // mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               NavigationButton(
                 text: 'SERIES OVERVIEW',

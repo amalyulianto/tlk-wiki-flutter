@@ -1,4 +1,4 @@
-import 'character.dart';
+import 'package:tlk_wiki/models/character.dart';
 
 class CharactersData {
   List<Character> _characters = [

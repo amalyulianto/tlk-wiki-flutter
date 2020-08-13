@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../const.dart';
+import 'package:tlk_wiki/const.dart';
 
 class SeriesScreen extends StatelessWidget {
   static const id = '\series_screen';

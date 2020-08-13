@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tlk_wiki/screens/list_screen.dart';
-
-import 'character_screen.dart';
+import 'package:tlk_wiki/screens/character_screen.dart';
 import 'package:tlk_wiki/models/characters_data.dart';
 import 'package:tlk_wiki/models/character.dart';
 

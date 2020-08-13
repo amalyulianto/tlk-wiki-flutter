@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tlk_wiki/const.dart';
-import 'list_screen.dart';
+import 'package:tlk_wiki/screens/list_screen.dart';
 
 class CharacterScreen extends StatefulWidget {
   static const id = 'character_screen';
@@ -13,7 +13,7 @@ class _CharacterScreenState extends State<CharacterScreen> {
   Widget build(BuildContext context) {
     final CharacterScreenArgs args = ModalRoute.of(context).settings.arguments;
     bool isSaved = args.saved.contains(args.character);
-    // bool isSaved = false;
+
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColor,
       appBar: AppBar(
