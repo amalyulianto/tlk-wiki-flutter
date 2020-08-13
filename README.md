@@ -5,9 +5,9 @@ Aplikasi asli dibuat menggunakan Android Studio dan bahasa Kotlin. Kemudian saya
 
 ![Screenshot](https://github.com/amalyulianto/TLKWiki/blob/master/screenshots/TLKWiki_home.PNG?raw=true)
 ![Screenshot](https://github.com/amalyulianto/TLKWiki/blob/master/screenshots/TLKWiki_overview.PNG?raw=true)
-![Screenshot](https://github.com/amalyulianto/TLKWiki/blob/master/screenshots/TLKWiki_list.PNG?raw=true)
-![Screenshot](https://github.com/amalyulianto/TLKWiki/blob/master/screenshots/TLKWiki_detail1.PNG?raw=true)
+![Screenshot](https://github.com/amalyulianto/TLKWiki/blob/master/screenshots/tlk_wiki_list.PNG?raw=true)
+![Screenshot](https://github.com/amalyulianto/TLKWiki/blob/master/screenshots/tlk_wiki_character.PNG?raw=true)
 ![Screenshot](https://github.com/amalyulianto/TLKWiki/blob/master/screenshots/TLKWiki_detail2.PNG?raw=true)
-![Screenshot](https://github.com/amalyulianto/TLKWiki/blob/master/screenshots/TLKWiki_about.PNG?raw=true)
+![Screenshot](https://github.com/amalyulianto/TLKWiki/blob/master/screenshots/tlk_wiki_about.PNG?raw=true)
 
 
