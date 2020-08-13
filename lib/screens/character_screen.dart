@@ -1,23 +1,44 @@
 import 'package:flutter/material.dart';
 import 'package:tlk_wiki/const.dart';
-import 'package:tlk_wiki/models/character.dart';
 import 'list_screen.dart';
 
-class CharacterScreen extends StatelessWidget {
+class CharacterScreen extends StatefulWidget {
   static const id = 'character_screen';
-  final Character character;
+  @override
+  _CharacterScreenState createState() => _CharacterScreenState();
+}
 
-  CharacterScreen({this.character});
-
+class _CharacterScreenState extends State<CharacterScreen> {
   @override
   Widget build(BuildContext context) {
     final CharacterScreenArgs args = ModalRoute.of(context).settings.arguments;
+    bool isSaved = args.saved.contains(args.character);
+    // bool isSaved = false;
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColor,
       appBar: AppBar(
+        leading: BackButton(
+          onPressed: () {
+            Navigator.pop(context, args.saved);
+          },
+        ),
         title: Text(
           args.character.name,
         ),
+        actions: <Widget>[
+          IconButton(
+            icon: isSaved ? Icon(Icons.favorite) : Icon(Icons.favorite_border),
+            onPressed: () {
+              setState(() {
+                if (isSaved) {
+                  args.saved.remove(args.character);
+                } else {
+                  args.saved.add(args.character);
+                }
+              });
+            },
+          )
+        ],
       ),
       body: ListView(
         children: <Widget>[

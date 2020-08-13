@@ -84,13 +84,14 @@ class CharactersData {
       relatives: 'Kjartan (Father)',
     ),
     Character(
-        name: 'Osferth',
-        detail:
-            "A bastard son to Alfred, he was sent to the church and served as a novice monk. He then joined Uhtred as a warrior, even though he lacked courage and battle skills. After surviving many battles, with luck, he then became a competent warrior and one of Uhtred's trusted friends.",
-        photo: 'assets/images/osferth.png',
-        gender: 'Male',
-        residence: "Winchester, Wessex (formerly)\n" + "Cookham, Wessex",
-        relatives: 'Alfred'),
+      name: 'Osferth',
+      detail:
+          "A bastard son to Alfred, he was sent to the church and served as a novice monk. He then joined Uhtred as a warrior, even though he lacked courage and battle skills. After surviving many battles, with luck, he then became a competent warrior and one of Uhtred's trusted friends.",
+      photo: 'assets/images/osferth.png',
+      gender: 'Male',
+      residence: "Winchester, Wessex (formerly)\n" + "Cookham, Wessex",
+      relatives: 'Alfred',
+    ),
     Character(
       name: 'Young Uhtred',
       detail:

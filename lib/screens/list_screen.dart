@@ -26,24 +26,23 @@ class _ListScreenState extends State<ListScreen> {
           IconButton(
             icon: Icon(Icons.favorite),
             onPressed: () {
-              setState(() {
-                Navigator.pushNamed(
-                  context,
-                  FavoriteScreen.id,
-                  arguments: CharacterScreenArgs(saved: saved),
-                );
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(
-                //     builder: (context) => FavoriteScreen(
-                //       character: saved,
-                //     ),
-                //   ),
-                // );
-              });
-              // Navigator.pushNamed(context, FavoriteScreen.id,
-              //     arguments: CharacterScreenArgs(saved: saved));
-              // print(saved);
+              setState(
+                () {
+                  Navigator.pushNamed(
+                    context,
+                    FavoriteScreen.id,
+                    arguments: CharacterScreenArgs(saved: saved),
+                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => FavoriteScreen(
+                  //       character: saved,
+                  //     ),
+                  //   ),
+                  // );
+                },
+              );
             },
           )
         ],
@@ -51,21 +50,19 @@ class _ListScreenState extends State<ListScreen> {
       body: ListView.builder(
         itemCount: charactersData.data.length,
         itemBuilder: (BuildContext context, int index) {
-          bool isSaved = saved.contains(charactersData.data[index]);
           return GestureDetector(
             onTap: () {
               Navigator.pushNamed(
                 context,
                 CharacterScreen.id,
-                arguments:
-                    CharacterScreenArgs(character: charactersData.data[index]),
+                arguments: CharacterScreenArgs(
+                    character: charactersData.data[index], saved: saved),
               );
             },
             child: SizedBox(
               width: MediaQuery.of(context).size.width,
               child: Container(
-                padding: EdgeInsets.only(
-                    top: 10.0, bottom: 10, left: 10.0, right: 2),
+                padding: EdgeInsets.symmetric(vertical: 12.0, horizontal: 12.0),
                 child: SizedBox(
                   width: double.infinity,
                   child: Row(
@@ -111,22 +108,6 @@ class _ListScreenState extends State<ListScreen> {
                           ],
                         ),
                       ),
-                      IconButton(
-                        color: Colors.grey,
-                        icon: Icon(
-                            isSaved ? Icons.favorite : Icons.favorite_border),
-                        onPressed: () {
-                          setState(() {
-                            if (isSaved) {
-                              saved.remove(charactersData.data[index]);
-                              print(saved);
-                            } else {
-                              saved.add(charactersData.data[index]);
-                              print(saved);
-                            }
-                          });
-                        },
-                      )
                     ],
                   ),
                 ),
