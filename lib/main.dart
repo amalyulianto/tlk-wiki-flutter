@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tlk_wiki/screens/about_screen.dart';
+import 'package:tlk_wiki/screens/favorite_screen.dart';
 import 'package:tlk_wiki/screens/home_screen.dart';
 import 'package:tlk_wiki/screens/list_screen.dart';
 import 'package:tlk_wiki/screens/character_screen.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         SeriesScreen.id: (context) => SeriesScreen(),
         AboutScreen.id: (context) => AboutScreen(),
         SplashScreen.id: (context) => SplashScreen(),
+        FavoriteScreen.id: (context) => FavoriteScreen(),
       },
     );
   }
