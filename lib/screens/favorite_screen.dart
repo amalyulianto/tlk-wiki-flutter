@@ -23,7 +23,7 @@ class FavoriteScreen extends StatelessWidget {
           itemBuilder: (BuildContext context, int index) {
             return GestureDetector(
               onTap: () {
-                // Navigate to the CharacterScreen by passing the selected member from saved list
+                // Navigate to the CharacterScreen by passing the selected member from saved list.
                 Navigator.pushNamed(
                   context,
                   CharacterScreen.id,

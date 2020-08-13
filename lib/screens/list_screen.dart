@@ -121,6 +121,7 @@ class _ListScreenState extends State<ListScreen> {
 }
 
 class CharacterScreenArgs {
+  // This class is used to pass aarguments to other screens
   final Character character;
   final List<Character> saved;
   CharacterScreenArgs({this.character, this.saved});

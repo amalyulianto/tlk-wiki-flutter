@@ -11,7 +11,10 @@ class CharacterScreen extends StatefulWidget {
 class _CharacterScreenState extends State<CharacterScreen> {
   @override
   Widget build(BuildContext context) {
+    // Receive data and save it on the args variable
     final CharacterScreenArgs args = ModalRoute.of(context).settings.arguments;
+
+    // Check if the list saved (coming from args) contains the current member (character)
     bool isSaved = args.saved.contains(args.character);
 
     return Scaffold(
@@ -19,6 +22,7 @@ class _CharacterScreenState extends State<CharacterScreen> {
       appBar: AppBar(
         leading: BackButton(
           onPressed: () {
+            // Send daata back to the previous screen
             Navigator.pop(context, args.saved);
           },
         ),
@@ -27,11 +31,12 @@ class _CharacterScreenState extends State<CharacterScreen> {
         ),
         actions: <Widget>[
           IconButton(
-            // color: isSaved ? Colors.red : null,
+            color: isSaved ? Colors.red : null,
             icon: isSaved ? Icon(Icons.favorite) : Icon(Icons.favorite_border),
             onPressed: () {
               setState(
                 () {
+                  // Add and remove data from the args.saved list
                   if (isSaved) {
                     args.saved.remove(args.character);
                   } else {
