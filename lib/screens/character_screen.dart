@@ -27,15 +27,18 @@ class _CharacterScreenState extends State<CharacterScreen> {
         ),
         actions: <Widget>[
           IconButton(
+            // color: isSaved ? Colors.red : null,
             icon: isSaved ? Icon(Icons.favorite) : Icon(Icons.favorite_border),
             onPressed: () {
-              setState(() {
-                if (isSaved) {
-                  args.saved.remove(args.character);
-                } else {
-                  args.saved.add(args.character);
-                }
-              });
+              setState(
+                () {
+                  if (isSaved) {
+                    args.saved.remove(args.character);
+                  } else {
+                    args.saved.add(args.character);
+                  }
+                },
+              );
             },
           )
         ],

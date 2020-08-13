@@ -29,7 +29,7 @@ class HomeScreen extends StatelessWidget {
             colorFilter: ColorFilter.mode(
               Colors.white.withOpacity(0.85),
               BlendMode
-                  .dstATop, // Apply opaque color with opacity on the background
+                  .dstATop, // Apply opaque color with opacity on the background.
             ),
             image: AssetImage(
               'assets/images/the_last_kingdom.jpg',

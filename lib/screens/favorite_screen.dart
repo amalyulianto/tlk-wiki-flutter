@@ -2,16 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:tlk_wiki/screens/list_screen.dart';
 import 'package:tlk_wiki/screens/character_screen.dart';
 import 'package:tlk_wiki/models/characters_data.dart';
-import 'package:tlk_wiki/models/character.dart';
 
 class FavoriteScreen extends StatelessWidget {
   static const id = '/favorite_screen';
-  final List<Character> character;
-  FavoriteScreen({this.character});
 
   final CharactersData charactersData = CharactersData();
   @override
   Widget build(BuildContext context) {
+    // Receiving data and store it in the args variable
     final CharacterScreenArgs args = ModalRoute.of(context).settings.arguments;
     print(args);
     return Scaffold(
@@ -25,10 +23,12 @@ class FavoriteScreen extends StatelessWidget {
           itemBuilder: (BuildContext context, int index) {
             return GestureDetector(
               onTap: () {
+                // Navigate to the CharacterScreen by passing the selected member from saved list
                 Navigator.pushNamed(
                   context,
                   CharacterScreen.id,
-                  arguments: CharacterScreenArgs(character: args.saved[index]),
+                  arguments: CharacterScreenArgs(
+                      character: args.saved[index], saved: args.saved),
                 );
               },
               child: SizedBox(
